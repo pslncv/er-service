@@ -1,0 +1,29 @@
+body {}
+
+.services {}
+
+.services__list {
+    margin: 19px 0 0 0 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 33px;
+}
+
+.services__list-item {
+    height: 49px;
+    width: 172px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #858585;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.services__list-item:active span{
+    transform: scale(0.9);
+}

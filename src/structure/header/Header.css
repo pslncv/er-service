@@ -4,8 +4,8 @@
 
 .header {
     height: 100px;
-    max-width: 1400px;
-    padding: 0 30px;
+    max-width: 1200px;
+    padding: 0 20px;
     margin: 0 auto;
     background-color: #686868;
     display: flex;
@@ -13,11 +13,11 @@
 }
 
 .header__logo {
-    margin: 0 30px 0 0 ;
+    margin: 0 38px 0 0 ;
 }
 
 .header__logo-link {
-    font-size: 60px;
+    font-size: 48.6px;
     font-weight: 600;
     text-transform: uppercase;
     color: #ffffff;
@@ -26,7 +26,7 @@
 .header__navigation-list {
     list-style: none;
     display: flex;
-    column-gap: 40px;
+    column-gap: 30px;
 }
 
 .header__navigation-item {
@@ -46,17 +46,17 @@
 }
 
 .header__search {
-    margin: 0 0 0 30px;
+    margin: 0 0 0 31px;
     display: flex;
 }
 
 .search__input {
-    height: 50px;
-    width: 300px;
+    height: 52px;
+    width: 224px;
     font-size: 30px;
     background-color: #d9d9d9;
     border: none;
-    border-radius: 10px 0 0 10px;
+    border-radius: 8px 0 0 8px;
     padding: 0 10px;
     display: flex;
     align-items: center;
@@ -66,7 +66,7 @@
     width: 50px;
     background-color: #d9d9d9;
     border: none;
-    border-radius: 0 10px 10px 0;
+    border-radius: 0 8px 8px 0;
 }
 
 .search__button:active img {
@@ -74,12 +74,12 @@
 }
 
 .header__cart {
-    height: 50px;
-    width: 50px;
+    height: 52px;
+    width: 52px;
     background-color: #d9d9d9;
     border: none;
-    border-radius: 10px;
-    margin: 0 0 0 10px;
+    border-radius: 8px;
+    margin: 0 0 0 13px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,13 +90,13 @@
 }
 
 .header__call {
-    height: 50px;
-    width: 300px;
+    height: 52px;
     background-color: #d9d9d9;
     border: none;
-    border-radius: 10px;
-    margin: 0 0 0 10px;
+    border-radius: 8px;
+    margin: 0 0 0 13px;
     display: flex;
+    flex: 1;
     align-items: center;
     justify-content: center;
 }
