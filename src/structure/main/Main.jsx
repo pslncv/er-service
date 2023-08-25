@@ -1,12 +1,14 @@
 import React from 'react';
-import ServicesList from './servicesTop/ServicesList';
+import ServicesListTop from './servicesTop/ServicesListTop';
+import ServicesListMiddle from './servicesMiddle/ServicesListMiddle';
 
 const Main = () => {
     return ( 
         <main className='body'>
-            <ServicesList/>
+            <ServicesListTop />
+            <ServicesListMiddle />
         </main>
-     );
+    )
 }
  
 export default Main;

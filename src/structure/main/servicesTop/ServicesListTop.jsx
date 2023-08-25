@@ -13,7 +13,7 @@ const ServicesListTop = () => {
 
     return ( 
         <section className='body__services services'>
-            <div className='services__list'>
+            <div className='services__list_top'>
                 {services.map(service => 
                     <ServicesItem
                         service={service}

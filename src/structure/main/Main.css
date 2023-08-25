@@ -1,8 +1,15 @@
+#root {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 body {}
 
 .services {}
 
-.services__list {
+/* Servises Top */
+
+.services__list_top {
     margin: 19px 0 0 0 ;
     display: flex;
     align-items: center;
@@ -10,7 +17,7 @@ body {}
     column-gap: 33px;
 }
 
-.services__list-item {
+.services__list_top-item {
     height: 49px;
     width: 172px;
     font-size: 16px;
@@ -24,6 +31,66 @@ body {}
     justify-content: center;
 }
 
-.services__list-item:active span{
+.services__list_top-item:active span{
     transform: scale(0.9);
 }
+
+/* Services Middle */
+
+.services__list_middle {
+    margin: 57px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 42px;
+}
+
+.services__list_middle-item {
+    height: 122px;
+    width: 160px;
+    border: 3px #334074 solid;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform .2s ease-in-out;
+}
+
+.services__list_middle-item:last-child {
+    white-space: pre-wrap;
+}
+
+.services__list_middle-item:before {
+    content: '';
+    background-image: url('../../img/santech/Смеситель off.png');
+    background-size: 65px 65px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #ffffff;
+    display: block;
+    position: absolute;
+    top: -33px;
+    left: 30px;
+    height: 66px;
+    width: 100px;
+    transition: background-image .2s ease-in-out;
+}
+
+.services__list_middle-item:hover {
+    transform: scale(1.1);
+}
+
+.services__list_middle-item:hover:before {
+    background-image: url('../../img/santech/Смеситель on.png');
+}
+
+.services__list_middle-item span{
+    font-size: 18px;
+    font-weight: 600;
+    color: #334074;
+    text-align: center;
+    pointer-events: none;
+}
+
+.services__list_middle-item:active span{}
