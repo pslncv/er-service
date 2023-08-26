@@ -23,20 +23,13 @@
     column-gap: 30px;
 }
 
-.header__navigation-item {
+.header__navigation-link{
+    color: #ffffff;
     transition: color .15s ease-in-out;
 }
 
-.header__navigation-item:hover {
-    color: #8a8989;
-}
-
-.header__navigation-link {
-    color: #ffffff;
-}
-
-.header__navigation {
-
+.header__navigation-link:hover  {
+    color: #b4b4b4;
 }
 
 .header__search {
