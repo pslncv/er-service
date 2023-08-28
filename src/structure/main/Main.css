@@ -1,8 +1,3 @@
-#root {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 body {}
 
 button {
@@ -58,34 +53,44 @@ button {
     justify-content: space-between;
 }
 
-.services__list_middle-item:hover .services__list_middle-title{
+/* Передача стилей разных классов (из-за разных картинок и прайсов)*/
+.services__list_middle-item:hover .services__list_middle-title-1,
+.services__list_middle-item:hover .services__list_middle-title-2,
+.services__list_middle-item:hover .services__list_middle-title-3,
+.services__list_middle-item:hover .services__list_middle-title-4,
+.services__list_middle-item:hover .services__list_middle-title-5,
+.services__list_middle-item:hover .services__list_middle-title-6{
     transform: scale(1.1);
 }
 
-.services__list_middle-item:last-child span{
+.services__list_middle-item:last-child > div > .services__list_middle-name{
     width: 160px;
     white-space: pre-wrap;
 }
 
-.services__list_middle-title {
+.services__list_middle-item div {
     height: 122px;
-    font-size: 18px;
-    font-weight: 600;
-    color: #334074;
     border: 3px #334074 solid;
     border-radius: 10px;
     position: relative;
     text-align: center;
     pointer-events: none;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     transition: transform .2s ease-in-out;
 }
 
-.services__list_middle-title:before {
+.services__list_middle-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #334074;
+}
+
+
+/* Иллюстрации услуг - стили */
+.services__list_middle-item div:before {
     content: '';
-    background-image: url('../../img/santech/Смеситель off.png');
-    background-size: 65px 65px;
     background-repeat: no-repeat;
     background-position: center;
     background-color: #ffffff;
@@ -98,13 +103,66 @@ button {
     transition: background-image .2s ease-in-out;
 }
 
-.services__list_middle-item:hover .services__list_middle-title:before {
+
+/* Иллюстрации услуг - картинки */
+.services__list_middle-title-1:before {
+    background-image: url('../../img/santech/Смеситель off.png');
+    background-size: 61px 65px;
+}
+
+.services__list_middle-title-2:before {
+    background-image: url('../../img/santech/Счетчик off.png');
+    background-size: 65px 44px;
+}
+
+.services__list_middle-title-3:before {
+    background-image: url('../../img/clean/Уборка off.png');
+    background-size: 51px 65px;
+}
+
+.services__list_middle-title-4:before {
+    background-image: url('../../img/obsh/Шестеренки off.png');
+    background-size: 65px 65px;
+}
+
+.services__list_middle-title-5:before {
+    background-image: url('../../img/windows/Магнитный ключ off.png');
+    background-size: 65px 38px;
+}
+
+.services__list_middle-title-6:before {
+    background-image: url('../../img/obsh/Малярные работы off.png');
+    background-size: 65px 61px;
+}
+
+
+/* Изменения иллюстраций при наведении на услугу */
+.services__list_middle-item:hover .services__list_middle-title-1:before {
     background-image: url('../../img/santech/Смеситель on.png');
 }
 
-.services__list_middle-title:after {
-    content: '500 р';
-    height: 30px;
+.services__list_middle-item:hover .services__list_middle-title-2:before {
+    background-image: url('../../img/santech/Счетчик on.png');
+}
+
+.services__list_middle-item:hover .services__list_middle-title-3:before {
+    background-image: url('../../img/clean/Уборка on.png');
+}
+
+.services__list_middle-item:hover .services__list_middle-title-4:before {
+    background-image: url('../../img/obsh/Шестеренки on.png');
+}
+
+.services__list_middle-item:hover .services__list_middle-title-5:before {
+    background-image: url('../../img/windows/Магнитный ключ on.png');
+}
+
+.services__list_middle-item:hover .services__list_middle-title-6:before {
+    background-image: url('../../img/obsh/Малярные работы on.png');
+}
+
+.services__list_middle-price {
+    height: 28px;
     width: 100px;
     font-size: 30px;
     font-weight: 600;
@@ -113,7 +171,7 @@ button {
     text-align: center;
     display: block;
     position: absolute;
-    bottom: -15px;
+    bottom: -14px;
     left: 30px;
 }
 

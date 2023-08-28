@@ -7,10 +7,15 @@
 	font-family: 'Montserrat', 'sans-serif';
 }
 
-h1, h2, h3, h4, h5, h6, p, a {
+h1, h2, h3, h4, h5, h6, p, a, span {
 	font-size: 100%;  
 	font-weight: normal;
 	line-height: 1;
 	color: inherit;
 	text-decoration: none;
+}
+
+#root {
+    max-width: 1200px;
+    margin: 0 auto;
 }
