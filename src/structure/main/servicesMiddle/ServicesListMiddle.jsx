@@ -13,14 +13,14 @@ const ServicesListMiddle = () => {
     ])
 
     return ( 
-        <div className='services__list_middle'>
+        <section className='services__list_middle'>
             {services.map(service => 
                 <ServicesItem
                     service={service}
                     key={service.id}
                 />
             )}
-        </div>
+        </section>
     );
 }
  
