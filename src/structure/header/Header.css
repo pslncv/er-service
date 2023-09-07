@@ -23,9 +23,14 @@
     column-gap: 30px;
 }
 
-.header__navigation-link{
+.header__navigation-link {
     color: #ffffff;
     transition: color .15s ease-in-out;
+}
+
+.header__navigation-link span{
+    font-size: 16px;
+    font-weight: 300;
 }
 
 .header__navigation-link:hover  {

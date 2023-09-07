@@ -5,7 +5,7 @@ import ServiceListBottom from './servicesBottom/ServiceListBottom';
 
 const Main = () => {
     return ( 
-        <main className='body'>
+        <main className='main services'>
             <ServicesListTop />
             <ServicesListMiddle />
             <ServiceListBottom />

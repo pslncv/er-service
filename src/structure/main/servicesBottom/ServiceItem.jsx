@@ -1,12 +1,12 @@
 import React from 'react';
-import Right from './Right';
-import Left from './Left';
+import Aside from './Aside/Aside.jsx';
+import Grid from './Grid/Grid.jsx';
 
 const ServiceItem = () => {
     return (
         <section className='services__list_bottom'>
-            <Left />
-            <Right />
+            <Aside />
+            <Grid />
         </section>
     );
 }

@@ -3,7 +3,7 @@ import Header from "./structure/header/Header";
 import Main from "./structure/main/Main";
 
 // import styles
-import './styles/App.css'
+import './App.css'
 import './structure/header/Header.css'
 import './structure/main/Main.css'
 

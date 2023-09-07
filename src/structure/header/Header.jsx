@@ -2,7 +2,6 @@ import React from 'react';
 import search from '../../img/search.png';
 import cart from '../../img/cart.png'
 
-
 const Header = () => {
     return ( 
         <header className='header'>
@@ -15,17 +14,17 @@ const Header = () => {
                 <ul className='header__navigation-list'>
                     <li className='header__navigation-item'>
                         <a href='#' className='header__navigation-link'>
-                            <span>пункт меню</span>
+                            <span>каталог</span>
                         </a>
                     </li>
                     <li className='header__navigation-item'>
                         <a href='#' className='header__navigation-link'>
-                            <span>пункт меню</span>
+                            <span>заказать консультацию</span>
                         </a>
                     </li>
                     <li className='header__navigation-item'>
                         <a href='#' className='header__navigation-link'>
-                            <span>пункт меню</span>
+                            <span>объекты</span>
                         </a>
                     </li>
                 </ul>

@@ -18,15 +18,22 @@ button {
 .services__list_top-item {
     height: 49px;
     width: 172px;
-    font-size: 16px;
-    font-weight: 600;
-    color: #ffffff;
     background-color: #858585;
     border: none;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.grid__service:focus-visible {
+    transform: scale(1.05);
+}
+
+.services__list_top-item span{
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
 }
 
 .services__list_top-item:active{
@@ -124,8 +131,8 @@ button {
 }
 
 .services__list_middle-title-5:before {
-    background-image: url('../../img/windows/Магнитный ключ off.png');
-    background-size: 65px 38px;
+    background-image: url('../../img/electrics/Подключение\ кабеля\ off.png');
+    background-size: 65px 65;
 }
 
 .services__list_middle-title-6:before {
@@ -152,7 +159,7 @@ button {
 }
 
 .services__list_middle-item:hover .services__list_middle-title-5:before {
-    background-image: url('../../img/windows/Магнитный ключ on.png');
+    background-image: url('../../img/electrics/Подключение кабеля on.png');
 }
 
 .services__list_middle-item:hover .services__list_middle-title-6:before {
@@ -161,7 +168,7 @@ button {
 
 .services__list_middle-price {
     height: 28px;
-    width: 100px;
+    width: 110px;
     font-size: 30px;
     font-weight: 600;
     color: #D95E57;
@@ -177,16 +184,15 @@ button {
 .services__list_middle-button {
     height: 50px;
     width: 100%;
-    font-size: 16px;
-    font-weight: 600;
-    color: #ffffff;
     background-color: #D95E57;
     border: none;
     border-radius: 10px;
 }
 
 .services__list_middle-button span {
-    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
 }
 
 .services__list_middle-button:active{
@@ -241,7 +247,7 @@ button {
     display: block;
 }
 
-/* Грид секция */
+/* Грид секция - разметка */
 .grid {
     display: grid;
     grid-template-columns: 221px;
@@ -258,6 +264,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .slider,
@@ -272,8 +279,8 @@ button {
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: end;
-    justify-content: end;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 .grid__service:active{
     transform: scale(0.95);
@@ -308,10 +315,29 @@ button {
     width: 222px;
     grid-area: 2 / 4 / 5 / 5;
 }
-/* Грид секция */
+/* Грид секция - разметка */
 
 
-.slider__title {
+.slider__container {
+    height: 100%;
+    width: calc(475px * 3);
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    transition: left 1s ease-in-out;
+}
+
+.slider__shares {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider__shares span{
     font-family: 'Roboto', 'sans-serif';
     font-size: 38px;
     font-weight: 600;
@@ -381,4 +407,11 @@ button {
     font-size: 22px;
     font-weight: 600;
     text-align: end;
+}
+
+.grid__service:not(:nth-child(4)) .grid__service__title{
+    margin: 20px 0 0 0;
+}
+
+.grid__service__img {
 }
