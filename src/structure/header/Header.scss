@@ -1,0 +1,107 @@
+.header {
+    height: 94px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+
+    &__logo {
+        margin: 0 31px 0 0;
+    }
+
+    &__logo-link {
+        display: inline-block;
+    }
+
+    &__navigation-list {
+        list-style: none;
+        display: flex;
+        column-gap: 36px;
+    }
+
+    &__navigation-link {
+        transition: color .15s ease-in-out;
+    }
+
+    &__navigation-link span{
+        color: #000;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    &__navigation-link:hover  {
+        color: #b4b4b4;
+    }
+
+    &__cart {
+    height: 52px;
+    width: 52px;
+    background-color: #d9d9d9;
+    border: none;
+    border-radius: 8px;
+    margin: 0 0 0 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    &__cart:active img {
+    transform: scale(0.9);
+    }
+
+    &__call {
+    height: 52px;
+    background-color: #d9d9d9;
+    border: none;
+    border-radius: 8px;
+    margin: 0 0 0 13px;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    }
+
+    &__call span{
+    font-size: 16px;
+    font-weight: 600;
+    }
+
+    &__call:active span{
+    transform: scale(0.95);
+    }
+}
+
+.search {
+    margin: 0 0 0 44px;
+    display: flex;
+
+    &__input {
+        height: 46px;
+        width: 224px;
+        font-size: 12px;
+        border-top: 2px solid #334074;
+        border-left: 2px solid #334074;
+        border-bottom: 2px solid #334074;
+        border-right: none;
+        background-color: #d9d9d900;
+        padding: 0 10px;
+        display: flex;
+        align-items: center;
+        &::placeholder {
+            margin: 0 0 0 7px;
+        }
+    }
+
+    &__button {
+        width: 50px;        
+        background-color: #d9d9d900;
+        border-top: 2px solid #334074;
+        border-right: 2px solid #334074;
+        border-bottom: 2px solid #334074;
+        border-left: none;
+    }
+
+    &__button:active img {
+        transform: scale(0.9);
+    }
+}

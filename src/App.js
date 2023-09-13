@@ -4,8 +4,8 @@ import Main from "./structure/main/Main";
 
 // import styles
 import './App.css'
-import './structure/header/Header.css'
-import './structure/main/Main.css'
+import './structure/header/Header.scss'
+import './structure/main/Main.scss'
 
 function App() {
   return (
