@@ -1,58 +1,223 @@
-/* Шаблонные стили */
-button {
-    cursor: pointer;
-}
-
 /* Servises Top */
-.services__list_top {
-    margin: 19px 0 0 0 ;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    column-gap: 33px;
-}
+.services {
+    &__list {
 
-.services__list_top-item {
-    height: 49px;
-    width: 172px;
-    background-color: #858585;
-    border: none;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+        &_top {
+            margin: 28px 0 0 0 ;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &-item {
+                height: 49px;
+                width: 137px;
+                background-color: #D7CED1;
+                border: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: background-color .2s ease-in-out, color .2s ease-in-out;
+                & span {
+                    font-family: 'Roboto', 'sans-serif';
+                    font-size: 14px;
+                    color: #484848;
+                }
+                &:hover {
+                    background-color: #334074;
+                    & span {
+                        color: #FFFFFF;
+                    }
+                }
+                &:active {
+                    transform: scale(1.05);
+                }
+            }
+        }
 
-.grid__service:focus-visible {
-    transform: scale(1.05);
-}
+        &_middle {
+            margin: 57px 0 0 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            column-gap: 42px;
+            &-item {
+                height: 207px;
+                width: 160px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                & div {
+                    height: 122px;
+                    border: 3px #334074 solid;
+                    border-radius: 10px;
+                    position: relative;
+                    text-align: center;
+                    pointer-events: none;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    transition: transform .2s ease-in-out;
+                    &:before {
+                        content: '';
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-color: #ffffff;
+                        display: block;
+                        position: absolute;
+                        top: -33px;
+                        left: 30px;
+                        height: 66px;
+                        width: 100px;
+                        transition: background-image .2s ease-in-out;
+                    }
+                }
+                &:hover {
+                    & .services {
+                        &__list {
+                            &_middle {
+                                &-title {
+                                    &-1 {
+                                        &:before {
+                                            background-image: url('../../img/santech/Смеситель on.png');
+                                        }
+                                    }
+                                    &-2 {
+                                        &:before {
+                                            background-image: url('../../img/santech/Счетчик on.png');
+                                        }
+                                    }
+                                    &-3 {
+                                        &:before {
+                                            background-image: url('../../img/clean/Уборка on.png');
+                                        }
+                                    }
+                                    &-4 {
+                                        &:before {
+                                            background-image: url('../../img/obsh/Шестеренки on.png');
+                                        }
+                                    }
+                                    &-5 {
+                                        &:before {
+                                            background-image: url('../../img/electrics/Подключение кабеля on.png');
+                                        }
+                                    }
+                                    &-6 {
+                                        &:before {
+                                            background-image: url('../../img/obsh/Малярные работы on.png');
+                                        }                                   
+                                    }
+                                }
+                            }
+                        }
+                    }
 
-.services__list_top-item span{
-    font-size: 16px;
-    font-weight: 600;
-    color: #ffffff;
-}
+                }
+                &:last-child {
+                    & > div {
+                        & > .services__list_middle-name{
+                            width: 160px;
+                            white-space: pre-wrap;
+                        }
+                    }
+                }
+            }
+            &-name {
+                font-size: 18px;
+                font-weight: 600;
+                color: #334074;
+            }
+            &-title {
+                &-1 {
+                    &:before {
+                        background-image: url('../../img/santech/Смеситель off.png');
+                        background-size: 61px 65px;
+                    }
+                }
+                &-2 {
+                    &:before {
+                        background-image: url('../../img/santech/Счетчик off.png');
+                        background-size: 65px 44px;
+                    }
+                }
+                &-3 {
+                    &:before {
+                        background-image: url('../../img/clean/Уборка off.png');
+                        background-size: 51px 65px;
+                    }
+                }
+                &-4 {
+                    &:before {
+                        background-image: url('../../img/obsh/Шестеренки off.png');
+                        background-size: 65px 65px;
+                    }
+                }
+                &-5 {
+                    &:before {
+                        background-image: url('../../img/electrics/Подключение\ кабеля\ off.png');
+                        background-size: 65px 65;
+                    }
+                }
+                &-6 {
+                    &:before {
+                        background-image: url('../../img/obsh/Малярные работы off.png');
+                        background-size: 65px 61px;
+                    }
+                }
+            }
+            &-price {
+                height: 28px;
+                width: 110px;
+                font-size: 30px;
+                font-weight: 600;
+                color: #D95E57;
+                background-color: #ffffff;
+                text-align: center;
+                text-transform: uppercase;
+                display: block;
+                position: absolute;
+                bottom: -14px;
+                left: 30px;
+            }
+            &-button {
+                height: 50px;
+                width: 100%;
+                background-color: #D95E57;
+                border: none;
+                border-radius: 10px;
+                & span {
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: #ffffff;
+                }
+                &:active {
+                    transform: scale(0.95);
+                }
+            }
+        }
 
-.services__list_top-item:active{
-    transform: scale(0.95);
-}
-
-/* Services Middle */
-.services__list_middle {
-    margin: 57px 0 0 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    column-gap: 42px;
-}
-
-.services__list_middle-item {
-    height: 207px;
-    width: 160px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+        &_bottom {
+            margin: 32px 0 0 0;
+            display: flex;
+            column-gap: 32px;
+            &_left {
+                display: flex;
+                flex-direction: column;
+                row-gap: 32px;
+                &-block{
+                    height: 88px;
+                    width: 172px;
+                    background-color: #F3F0F0;
+                    border-radius: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    &:active {
+                        transform: scale(0.95);
+                    }
+                }
+            }
+        }
+    }
 }
 
 /* Передача стилей разных классов (из-за разных картинок и прайсов)*/
@@ -63,137 +228,6 @@ button {
 .services__list_middle-item:hover .services__list_middle-title-5,
 .services__list_middle-item:hover .services__list_middle-title-6{
     transform: scale(1.1);
-}
-
-.services__list_middle-item:last-child > div > .services__list_middle-name{
-    width: 160px;
-    white-space: pre-wrap;
-}
-
-.services__list_middle-item div {
-    height: 122px;
-    border: 3px #334074 solid;
-    border-radius: 10px;
-    position: relative;
-    text-align: center;
-    pointer-events: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transition: transform .2s ease-in-out;
-}
-
-.services__list_middle-name {
-    font-size: 18px;
-    font-weight: 600;
-    color: #334074;
-}
-
-
-/* Иллюстрации услуг - стили */
-.services__list_middle-item div:before {
-    content: '';
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #ffffff;
-    display: block;
-    position: absolute;
-    top: -33px;
-    left: 30px;
-    height: 66px;
-    width: 100px;
-    transition: background-image .2s ease-in-out;
-}
-
-
-/* Иллюстрации услуг - картинки */
-.services__list_middle-title-1:before {
-    background-image: url('../../img/santech/Смеситель off.png');
-    background-size: 61px 65px;
-}
-
-.services__list_middle-title-2:before {
-    background-image: url('../../img/santech/Счетчик off.png');
-    background-size: 65px 44px;
-}
-
-.services__list_middle-title-3:before {
-    background-image: url('../../img/clean/Уборка off.png');
-    background-size: 51px 65px;
-}
-
-.services__list_middle-title-4:before {
-    background-image: url('../../img/obsh/Шестеренки off.png');
-    background-size: 65px 65px;
-}
-
-.services__list_middle-title-5:before {
-    background-image: url('../../img/electrics/Подключение\ кабеля\ off.png');
-    background-size: 65px 65;
-}
-
-.services__list_middle-title-6:before {
-    background-image: url('../../img/obsh/Малярные работы off.png');
-    background-size: 65px 61px;
-}
-
-
-/* Изменения иллюстраций при наведении на услугу */
-.services__list_middle-item:hover .services__list_middle-title-1:before {
-    background-image: url('../../img/santech/Смеситель on.png');
-}
-
-.services__list_middle-item:hover .services__list_middle-title-2:before {
-    background-image: url('../../img/santech/Счетчик on.png');
-}
-
-.services__list_middle-item:hover .services__list_middle-title-3:before {
-    background-image: url('../../img/clean/Уборка on.png');
-}
-
-.services__list_middle-item:hover .services__list_middle-title-4:before {
-    background-image: url('../../img/obsh/Шестеренки on.png');
-}
-
-.services__list_middle-item:hover .services__list_middle-title-5:before {
-    background-image: url('../../img/electrics/Подключение кабеля on.png');
-}
-
-.services__list_middle-item:hover .services__list_middle-title-6:before {
-    background-image: url('../../img/obsh/Малярные работы on.png');
-}
-
-.services__list_middle-price {
-    height: 28px;
-    width: 110px;
-    font-size: 30px;
-    font-weight: 600;
-    color: #D95E57;
-    background-color: #ffffff;
-    text-align: center;
-    text-transform: uppercase;
-    display: block;
-    position: absolute;
-    bottom: -14px;
-    left: 30px;
-}
-
-.services__list_middle-button {
-    height: 50px;
-    width: 100%;
-    background-color: #D95E57;
-    border: none;
-    border-radius: 10px;
-}
-
-.services__list_middle-button span {
-    font-size: 16px;
-    font-weight: 600;
-    color: #ffffff;
-}
-
-.services__list_middle-button:active{
-    transform: scale(0.95);
 }
 
 
@@ -251,6 +285,9 @@ button {
     grid-template-rows: 129px;
     grid-column-gap: 36px;
     grid-row-gap: 32px;
+}
+.grid__service:focus-visible {
+    transform: scale(1.05);
 }
 
 .slider {

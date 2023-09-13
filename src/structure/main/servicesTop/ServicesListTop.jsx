@@ -4,11 +4,12 @@ import ServicesItem from './ServicesItem';
 const ServicesListTop = () => {
 
     const [services] = useState ([
-        {id: 1, title: 'Сантехника'},
-        {id: 2, title: 'Электрика'},
-        {id: 3, title: 'Документация'},
-        {id: 4, title: 'Уборка'},
-        {id: 5, title: 'Бытовые работы'},
+        {id: 1, title: 'Каталог'},
+        {id: 2, title: 'Сантехника'},
+        {id: 3, title: 'Электрика'},
+        {id: 4, title: 'Отопление'},
+        {id: 5, title: 'Клининг'},
+        {id: 6, title: 'Сервис на час'},
     ])
 
     return ( 

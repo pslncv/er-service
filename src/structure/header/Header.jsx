@@ -8,7 +8,7 @@ const Header = () => {
         <header className='header'>
             <div className='header__logo'>
                 <a href='/' className='header__logo-link'>
-                    <img src={logo} alt="" srcset="" />
+                    <img src={logo} alt="Эрмитаж Сервис"/>
                 </a>
             </div>
             <div className='header__navigation'>
