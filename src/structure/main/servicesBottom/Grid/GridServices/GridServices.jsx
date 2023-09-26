@@ -6,6 +6,9 @@ import pet from '../../../../../img/_grid/pet.png'
 import tools from '../../../../../img/_grid/tools.png'
 import docs from '../../../../../img/_grid/docs.png'
 
+// Styles
+import './Grid.scss'
+
 const GridServices = () => {
     return (
         <>

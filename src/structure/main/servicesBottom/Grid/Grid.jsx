@@ -4,7 +4,7 @@ import Slider from './Slider/Slider';
 
 const Grid = () => {
     return (
-        <div className='services__list_bottom_right grid'>
+        <div className='grid'>
             <Slider />
             <GridServices />
         </div>

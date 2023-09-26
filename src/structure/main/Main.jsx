@@ -1,15 +1,27 @@
 import React from 'react';
+
+// Top
 import ServicesListTop from './servicesTop/ServicesListTop';
+
+// Preview
+import ServicesPreview from './servicesPreview/ServicesPreview';
+
+// Middle
 import ServicesListMiddle from './servicesMiddle/ServicesListMiddle';
+
+// Info
+import ServicesListInfo from './servicesInfo/ServicesListInfo';
+
+// Bottom
 import ServiceListBottom from './servicesBottom/ServiceListBottom';
-import Preview from './preview/Preview';
 
 const Main = () => {
     return ( 
-        <main  className='main services'>
+        <main className='main services'>
             <ServicesListTop />
-            <Preview />
+            <ServicesPreview />
             <ServicesListMiddle />
+            <ServicesListInfo />
             <ServiceListBottom />
         </main>
     )

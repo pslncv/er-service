@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import ServicesItem from './ServicesItem';
 
+//Styles
+import './ServicesTop.scss'
+
 const ServicesListTop = () => {
 
     const [services] = useState ([
@@ -13,7 +16,7 @@ const ServicesListTop = () => {
     ])
 
     return ( 
-        <section className='services__list_top'>
+        <section className='services_top'>
             {services.map(service => 
                 <ServicesItem
                     service={service}

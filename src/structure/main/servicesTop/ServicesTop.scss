@@ -1,0 +1,36 @@
+.services_top {
+  margin: 28px 0 0 0 ;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & .link {
+      height: 49px;
+      width: 137px;
+      background-color: #D7CED1;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color .2s ease-in-out, transform .075s ease-in-out;
+
+      & span {
+          font-family: 'Roboto', 'sans-serif';
+          font-size: 14px;
+          color: #484848;
+      }
+
+      &:hover {
+          background-color: #334074;
+          transform: scale(1.12);
+
+          & span {
+              color: #FFFFFF;
+          }
+      }
+      
+      &:active {
+          transform: scale(1);
+      }
+  }
+}

@@ -1,15 +1,14 @@
 import React from 'react';
+import * as Img from '../../../img/servicesMiddle/Img.jsx'
 
 const ServiceItem = (props) => {
     return (  
-        <div className='services__list_middle-item'>
-            <div className={`services__list_middle-title-${props.service.id}`}>
-                <span className='services__list_middle-name'>{props.service.title}</span>
-                <span className='services__list_middle-price'>{props.service.price}</span>
+        <div className='item'>
+            <div className='image'>
+                <img src={Img[`${props.img}`]} alt={props.title}/>
             </div>
-            <button className='services__list_middle-button'>
-                <span>Заказать</span>
-            </button>
+            <div className='text'>{props.title}</div>
+            <div className='price'>{props.price}</div>
         </div>
     );
 }

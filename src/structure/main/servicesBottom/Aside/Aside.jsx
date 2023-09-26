@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import AsideButton from './AsideButton';
 
+// Styles
+import './Aside.scss'
+
 const Aside = () => {
 
     const [buttons] = useState([
@@ -11,7 +14,7 @@ const Aside = () => {
     ])
 
     return (
-        <aside className='services__list_bottom_left'>
+        <aside className='aside'>
             {buttons.map(button =>
                 <AsideButton 
                     button={button}

@@ -4,7 +4,6 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Montserrat', 'sans-serif';
 }
 
 img {
@@ -24,6 +23,8 @@ h1, h2, h3, h4, h5, h6, p, a, span {
 }
 
 #root {
-    max-width: 1200px;
+		font-family: 'Montserrat', 'sans-serif';
+    max-width: 1240px;
     margin: 0 auto;
+		padding: 0 20px;
 }

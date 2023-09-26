@@ -1,0 +1,48 @@
+.aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__link {
+        height: 88px;
+        width: 172px;
+        background-color: #F3F0F0;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        // Yellow
+        &:nth-child(1) {
+            border: 2px #C3C578 solid;
+        }
+
+        // Cyan
+        &:nth-child(2) {
+            border: 2px #5FE0D8 solid;
+        }
+
+        // Green
+        &:nth-child(3) {
+            border: 2px #B1FFAF solid;
+        }
+
+        // Blue
+        &:nth-child(4) {
+            border: 2px #87ABF0 solid;
+        }
+        
+        &:active {
+            transform: scale(0.95);
+        }
+    }
+    
+    &__title {            
+        font-family: 'Roboto', 'sans-serif';
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 26px;
+        text-align: center;
+        display: block;
+    }
+}

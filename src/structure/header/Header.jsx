@@ -3,6 +3,9 @@ import logo from '../../img/logo.png'
 import search from '../../img/search.png';
 import cart from '../../img/cart.png'
 
+// Styles
+import './Header.scss'
+
 const Header = () => {
     return ( 
         <header className='header'>

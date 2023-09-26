@@ -1,0 +1,119 @@
+.services_preview {
+  margin: 22px 0 0 0;
+  position: relative;
+
+  & .background {
+    max-width: 100%;
+  }
+
+  & .content {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    // & .mission {}
+
+    & .logo {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      & .img {
+        margin: 22px 0 0 0;
+      }
+    
+      & .text {
+        font-family: 'Roboto', 'sans-serif';
+        color: #FFF;
+        text-align: center;
+    
+        &__title {
+          font-size: 36px;
+          font-weight: 400;
+          line-height: 63px;
+          margin: 64px 0 0 0;
+          text-transform: uppercase;
+    
+          & span {
+            font-weight: 700;
+          }
+        }
+    
+        &__subtitle {
+          font-size: 25.897px;
+          font-weight: 300;
+          line-height: 42.65px;
+          margin: 18px 0 0 0  ;
+        }
+      }    
+    
+      & .search {
+        height: 42px;
+        width: 635px;
+        background-color: #D95E57;
+        padding: 2px;
+        margin: 20px 0 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        & .input {
+          height: 100%;
+          width: 504px;
+          padding: 0 0 0 5px;
+    
+          &::placeholder {
+            color: #888181;
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 300;
+            padding: 0 0 0 13px;
+          }
+        }
+    
+        & .button {
+          height: 42px;
+          width: 128px;
+          background-color: #D95E57;
+          border: none;
+    
+          & span {
+            font-family: 'Roboto', 'sans-serif';
+            font-size: 16px;
+            color: #FFFFFF;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+
+    // & .services {}
+
+    & .button {
+      height: 120px;
+      width: 120px;
+      background-color: #334074;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      &__text {
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 700;
+        color: #FFF;
+        line-height: 151%;
+        text-transform: uppercase;
+      }
+    }
+  }  
+}
